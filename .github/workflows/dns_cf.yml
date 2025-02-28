@@ -2,8 +2,9 @@ name: 'dns_cf_push'
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
-
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
